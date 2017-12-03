@@ -1,0 +1,26 @@
+.container {
+    border-bottom: 1px solid black
+}
+
+div {
+    margin: 10px
+}
+
+.one {
+    color: orange;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background: url("/Users/wuwuchuanping/Downloads/IMG_0068.jpg") center;
+    background-size: 100% 100%;
+    text-align: center;
+    border: 1px soli orange;
+    font-size: 24px;
+    font-weight: bold
+}
+
+.two {
+    height: 80px;
+    width: 240px;
+    background: purple
+}

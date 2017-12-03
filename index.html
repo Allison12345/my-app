@@ -2,38 +2,12 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My first page</title>
-    <style>
-        .container {
-            border-bottom: 1px solid black
-        }
-
-        div {
-            margin: 10px
-        }
-
-        .one {
-            color: orange;
-            height: 300px;
-            width: 300px;
-            border-radius: 50%;
-            background: url("/Users/wuwuchuanping/Downloads/IMG_0068.jpg") center;
-            background-size: 100% 100%;
-            text-align: center;
-            border: 1px soli orange;
-            font-size: 24px;
-            font-weight: bold
-        }
-
-        .two {
-            height: 80px;
-            width: 240px;
-            background: purple
-        }
-    </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>My first page</title>
+        <link rel="stylesheet" href="./style.css"/>
+        
 </head>
 
 <body>
@@ -48,28 +22,8 @@
         </div>
     </div>
 
-    <script>
-        var button = document.getElementById("button")
-        var username = document.getElementById("username")
-        var password = document.getElementById("password")
-        var count = 0
-        button.onclick = function (e) {
-
-            if (count === 3) {
-                return alert("stop")
-            }
-            if (username.value === "") {
-                return alert("please write username")
-            } else {
-                console.log(username.value)
-            }
-            if (password.value === "") {
-                count++
-                alert("please write password")
-            } else {
-                console.log(password.value)
-            }
-        }
+    <script src="./script.js">
+       
     </script>
 </body>
 
