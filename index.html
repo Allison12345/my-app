@@ -7,34 +7,47 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My first page</title>
     <style>
+        .container {
+            border-bottom: 1px solid black
+        }
+
         div {
             margin: 10px
         }
+
         .one {
-            color:green;
-            height: 100px;
-            width: 100px;
+            color: orange;
+            height: 300px;
+            width: 300px;
             border-radius: 50%;
-            background: yellow;
-            text-align:center;
-            border:1px solid blue;
+            background: url("/Users/wuwuchuanping/Downloads/IMG_0068.jpg") center;
+            background-size: 100% 100%;
+            text-align: center;
+            border: 1px soli orange;
+            font-size: 24px;
+            font-weight: bold
         }
 
         .two {
             height: 80px;
             width: 240px;
-            background: red
+            background: purple
         }
     </style>
 </head>
 
 <body>
-    <div class="one">helloworld</div>
-    <div class="two">
-        <input id="username" type="text" placeholder="please write username" size="30" maxlength="10" />
-        <input id="password" type="password" placeholder="please write password" size="30" maxlength="11" />
-        <button id="button">login</button>
+    <div class=container>
+        <div class="one">helloworld</div>
     </div>
+    <div class=container>
+        <div class="two">
+            <input id="username" type="text" placeholder="please write username" size="30" maxlength="10" />
+            <input id="password" type="password" placeholder="please write password" size="30" maxlength="11" />
+            <button id="button">login</button>
+        </div>
+    </div>
+
     <script>
         var button = document.getElementById("button")
         var username = document.getElementById("username")
