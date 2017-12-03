@@ -1,12 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My first page</title>
+    <style>
+        div {
+            margin: 10px
+        }
+        .one {
+            color:green;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background: yellow;
+            text-align:center;
+            border:1px solid blue;
+        }
+
+        .two {
+            height: 80px;
+            width: 240px;
+            background: red
+        }
+    </style>
 </head>
+
 <body>
-        <div>helloworld</div>
+    <div class="one">helloworld</div>
+    <div class="two">
+        <input id="username" type="text" placeholder="please write username" size="30" maxlength="10" />
+        <input id="password" type="password" placeholder="please write password" size="30" maxlength="11" />
+        <button id="button">login</button>
+    </div>
+    <script>
+        var button = document.getElementById("button")
+        var username = document.getElementById("username")
+        var password = document.getElementById("password")
+        var count = 0
+        button.onclick = function (e) {
+
+            if (count === 3) {
+                return alert("stop")
+            }
+            if (username.value === "") {
+                return alert("please write username")
+            } else {
+                console.log(username.value)
+            }
+            if (password.value === "") {
+                count++
+                alert("please write password")
+            } else {
+                console.log(password.value)
+            }
+        }
+    </script>
 </body>
+
 </html>
