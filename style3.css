@@ -1,0 +1,7 @@
+<div class=container>
+        <div class="two">
+            <input id="username" type="text" placeholder="please write username" size="30" maxlength="10" />
+            <input id="password" type="password" placeholder="please write password" size="30" maxlength="11" />
+            <button id="button">login</button>
+        </div>
+    </div>
