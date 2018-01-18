@@ -5,3 +5,16 @@
             <button id="button">login</button>
         </div>
     </div>
+       
+
+    #footer {
+        border-bottom: 1px solid rgb(221, 202, 29);
+        background-color: black;
+        text-align: center;
+        color: white;
+        padding: 10px;
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+      }
