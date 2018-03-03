@@ -6,16 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Didital time</title>
-    <script>
-        function displayTime() {
-            var elf = document.getElementById("clock")
-            var now = new Date()
-            elf.innerHTML = now.toLocaleDateString()
-            setTimeout(displayTime, 1000)
-        }
-        window.onload = displayTime
-
-    </script>
+    <script src="displayTime.js"> </script>
+    <script src="factorial.js"></script>
     <style>
         #clock {
             Font: bold 24pt sans;
@@ -29,8 +21,13 @@
 </head>
 
 <body>
-    <h1>Digital clock</h1>
-    <span id="clock"></span>
+    <div>
+        <h1>Digital clock</h1>
+        <span id="clock"></span>
+        <a href="javascript:alert(new Date().toLocaleTimeString())">what time is it?</a>
+        <a href="javascript:void window.open('about:blank')">new window</a>
+    </div>
+
 </body>
 
 </html>
